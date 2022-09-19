@@ -12,7 +12,7 @@ console.log(b[3][3][0]);
 const c = Array.of("X","Y","Z",9,8,7);
 console.log(c);
 
-const d = Array[100].fill(false);
+const d = Array(100).fill(false);
 console.log(d);
 
 const e = new Array();
@@ -28,4 +28,8 @@ colores.push("Negro");
 console.log(colores);
 
 colores.pop();
-colores.log(colores);
+console.log(colores);
+
+colores.forEach(function(el,index){
+        console.log(`<li id="${index}">${el}</li>`);
+});
